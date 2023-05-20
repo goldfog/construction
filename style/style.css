@@ -16,6 +16,7 @@
   --rgba-white8: rgba(255, 255, 255, 0.8);
   --rgba-white6: rgba(255, 255, 255, 0.6);
   --rgba-black: rgba(0, 0, 0, 0.2);
+  --rgba-dark-black: rgba(33, 33, 33, 0.8);
 
   --light-gray: #F6F5F5;
   --dark-gray: #ECECEC;
@@ -24,6 +25,7 @@
   --black: #000000;
   --color-border: #C4C4C4;
   --color-green: #4CAF50;
+  --color-blue: #003471;
 
   --black-shadow: 0px 15px 30px -12px #000000;
 
@@ -460,23 +462,45 @@ a {
   font-size: 24px;
   line-height: 35px;
   color: var(--text-black);
+  margin-bottom: 17px;
 }
 
 .offer__boxs {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   column-gap: 22px;
   grid-row-gap: 20px;
 }
 
 .offer__box {
   width: 222px;
-  height: 220px;
+  min-height: 220px;
   background: var(--dark-gray);
   border: 1px solid var(--rgba-black);
   font-family: 'Inter';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all .5s ease-in-out;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.offer__box:hover{
+  animation: bounce 1s;
+  transition: all .5s ease-in-out;
+  box-shadow: 4px 3px 12px var(--bg-color-black);
 }
 
 .box__images {
@@ -484,11 +508,20 @@ a {
 }
 
 .box__name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+  padding: 0 5px;
+}
+
+.box__link {
   font-family: var(--font-inter);
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
   color: var(--text-black);
+  text-align: center;
 }
 
 .offer__btn {
@@ -502,4 +535,114 @@ a {
   font-size: 16px;
   line-height: 23px;
   color: var(--text-black);
+}
+
+/* Company */
+
+.company {
+  width: 1125px;
+  height: 464px;
+  margin: 0 auto 35px;
+}
+
+.company__inner {
+  display: flex;
+  column-gap: 42px;
+}
+
+.descr__title {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: var(--text-black);
+  margin: 15px 0 22px;
+}
+
+.descr__subtitle {
+  font-family: var(--font-oswald);
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: var(--text-black);
+  margin-bottom: 25px;
+}
+
+.descr__text {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 14px;
+}
+
+.partnership__text {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--text-black);
+  margin-bottom: 48px;
+}
+
+.company__logo {
+  display: flex;
+  align-items: center;
+  column-gap: 34px;
+}
+
+/* characteristic */
+
+.characteristic {
+  height: 213px;
+  width: 1125px;
+  margin: 0 auto 30px;
+}
+
+.characteristic__title {
+  font-family: var(--font-oswald);
+  font-size: 32px;
+  line-height: 46px;
+  color: #212121;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.characteristic__item {
+  display: flex;
+  column-gap: 30px;
+}
+
+.characteristic__info {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  column-gap: 8px;
+  flex: 1;
+}
+
+.characteristic__info::after {
+  content: url("../images/characteristic/sign-logo.svg");
+  position: absolute;
+  top: -15px;
+  left: 0;
+}
+
+.characteristic__descr {
+  width: 195px;
+}
+
+.characteristic__descr-title {
+  font-family: var(--font-oswald);
+  font-size: 19px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: var(--color-blue);
+  margin-bottom: 20px;
+}
+
+.characteristic__text {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--rgba-dark-black);
 }
