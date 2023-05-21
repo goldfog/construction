@@ -35,7 +35,7 @@
   --font-inter: "Inter";
   --font-oswald: "Oswald";
   --font-opensans: "Open Sans";
-  --font-roboto: "Open Sans";
+  --font-roboto: "Roboto";
 }
 
 body {
@@ -143,12 +143,15 @@ a {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 1;
 }
 
 .header__item {
+  position: relative;
   display: flex;
   align-items: end;
   column-gap: 115px;
+  z-index: 10;
 }
 
 .header__item-logo {
@@ -237,6 +240,10 @@ a {
 
 .menu__list-link:hover {
   color: var(--rgba-white6);
+}
+
+.link__whatsup {
+  display: none;
 }
 
 /* blocks */
@@ -806,14 +813,14 @@ a {
 }
 
 .privacy__text {
-  font-family: 'Roboto';
+  font-family: var(--font-roboto);
   font-size: 13px;
   line-height: 15px;
   color: var(--rgba-gray);
 }
 
 .privacy__copyright {
-  font-family: 'Roboto';
+  font-family: var(--font-roboto);
   font-size: 13px;
   color: var(--rgba-gray);
 }
@@ -881,4 +888,87 @@ a {
 .footer__btn {
   box-shadow: none;
   color: #303030;
+}
+
+/* Media */
+
+@media (max-width: 1440px) {
+  .header__inner {
+    padding: 43px 0 52px 150px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header__inner {
+    padding: 43px 0 52px 70px;
+  }
+
+  .header__inner::before {
+    display: none;
+  }
+
+  .header__info {
+    padding-right: 15px;
+  }
+
+}
+
+@media (max-width: 1100px) {
+  .header__inner {
+    padding: 43px 0 52px 0;
+  }
+
+  .header__item-logo {
+    margin-bottom: 30px;
+  }
+  .header__item {
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .header__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .header__contacts {
+    margin: 0 0 16px 0;
+  }
+
+  .header__phone {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin: 21px 0 0 0;
+  }
+
+  .header__info-tel {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .header__info-icon {
+    margin: 0;
+  }
+
+  .link__whatsup {
+    display: block;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .menu__buger {
+    width: 50px;
+    height: 50px;
+  }
+
+  .menu__buger span {
+    width: 50px;
+    height: 50px;
+    color: #000000;
+  }
 }
