@@ -13,9 +13,21 @@ $(document).ready(function(){
     arrows: false,
     infinite: true,
     speed: 500,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
     fade: true,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    touchMove: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 });
