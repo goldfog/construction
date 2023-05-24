@@ -17,11 +17,11 @@ $(document).ready(function(){
     autoplaySpeed: 5000,
     fade: true,
     cssEase: 'linear',
-    touchMove: true,
     responsive: [
       {
         breakpoint: 768,
         settings: {
+          touchMove: true,
           arrows: false,
           centerMode: true,
           centerPadding: '40px',
