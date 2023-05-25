@@ -38,31 +38,39 @@ $('.reviews__items').slick({
   slidesToScroll: 3,
   responsive: [
     {
-      breakpoint: 1100,
+      breakpoint: 910,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 2,
+        slidesToScroll: 1,
         infinite: true,
-        dots: false
+        dots: true,
+        PrevArrows: "",
+        NextArrows: "",
+        dots: true
       }
     },
     {
       breakpoint: 768,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2,
-        dots: true,
-        PrevArrows: "",
-        NextArrows: "",
-        appendArrows: true,
-        appendDots: true
+        slidesToScroll: 1,
+        dots: true
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 670,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 670,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
       }
     }
   ]

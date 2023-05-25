@@ -964,6 +964,10 @@ a {
     width: 100%;
   }
 
+  .reviews__more {
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 1100px) {
@@ -1157,6 +1161,78 @@ a {
     text-align: center;
   }
 
+  .reviews__item.slick-slide.slick-active {
+    padding: 20px 15px 15px 20px;
+  }
+
+  .reviews__text {
+    margin-top: 15px;
+  }
+
+}
+
+@media (max-width: 910px) {
+  .slick-slider {
+    position: relative;
+    align-items: center;
+  }
+
+  .slick-slider .slick-track {
+    column-gap: 45px;
+  }
+
+  .slick-arrow {
+    position: relative;
+    font-size: 0;
+    width: 50px;
+    height: 20px;
+    z-index: 10;
+  }
+
+  .slick-next.slick-arrow {
+    background-image: url(../images/reviews/arrow-next-slider.svg);
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+  }
+
+  .slick-prev.slick-arrow {
+    background-image: url(../images/reviews/arrow-prev-slider.svg);
+    border: none;
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+
+  .slick-prev.slick-arrow:active {
+    color: var(--color-blue);
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: -25px;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+  }
+
+  .slick-dots li {
+    padding-right: 5px;
+  }
+
+  .slick-dots li button {
+    font-size: 0;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: var(--color-border);
+  }
+
+  .slick-dots .slick-active button {
+    background: var(--color-blue);
+  }
 }
 
 
@@ -1457,6 +1533,52 @@ a {
 
 }
 
+@media (max-width: 670px) {
+  .reviews__inner {
+    position: relative;
+  }
+
+  .reviews__item{
+    max-width: 100%;
+  }
+
+  .reviews__more {
+    justify-content: center;
+  }
+
+  .reviews__link {
+    position: absolute;
+    bottom: -95px;
+  }
+
+  .slick-list.draggable {
+    margin-bottom: 0;
+  }
+
+  .slick-next.slick-arrow, 
+  .slick-prev.slick-arrow {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .slick-next.slick-arrow {
+    right: 125px;
+    bottom: -30px;
+    width: 12px;
+  }
+
+  .slick-prev.slick-arrow {
+    left: 125px;
+    bottom: -30px;
+    width: 12px;
+  }
+
+  .slick-dots {
+    margin-bottom: 0;
+  }
+  
+}
+
 @media (max-width: 569px) {
   .company__images {
     width: 100%;
@@ -1696,6 +1818,19 @@ a {
     line-height: 23px;
     margin-bottom: 35px;
   }
+
+  .slick-list.draggable {
+    height: 290px;
+  }
+
+  .reviews__item.slick-slide.slick-active {
+    padding: 30px 21px 68px 24px;
+    height: 274px;
+  }
+
+  .reviews__link {
+    bottom: -145px;
+  }
 }
 
 @media (max-width: 380px) {
@@ -1753,5 +1888,10 @@ a {
   .request__text {
     width: 100%;
     padding: 0 10px;
+  }
+
+  .slick-next.slick-arrow,
+  .slick-prev.slick-arrow {
+    display: none;
   }
 }
