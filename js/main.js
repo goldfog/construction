@@ -39,9 +39,6 @@ $('.reviews__items').slick({
           slidesToScroll: 1,
           infinite: true,
           dots: true,
-          PrevArrows: "",
-          NextArrows: "",
-          dots: true,
           adaptiveHeight: true,
         }
       },

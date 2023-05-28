@@ -167,7 +167,7 @@ a {
   z-index: 10;
 }
 
-.header__item-logo {
+.header__logo {
   display: flex;
   align-items: end;
   position: relative;
@@ -225,6 +225,9 @@ a {
 }
 
 .header__info-icon {
+  background-color: var(--black);
+  padding: 7px;
+  border-radius: 100%;
   margin-left: 16px;
 }
 
@@ -734,6 +737,10 @@ a {
 
 /* Reviews */
 
+.reviews {
+  margin-bottom: 33px;
+}
+
 .reviews__more {
   display: flex;
   justify-content: space-between;
@@ -798,7 +805,6 @@ a {
 .slick-list.draggable {
   display: flex;
   align-items: center;
-  margin-bottom: 33px;
   height: 274px;
 }
 
@@ -806,7 +812,8 @@ a {
 /* Footer */
 
 .footer {
-  background: var(--text-black)
+  background: var(--text-black);
+  position: relative;
 }
 
 .footer__inner {
@@ -863,7 +870,7 @@ a {
 }
 
 .footer__menu {
-  margin-right: 60px;
+  padding-right: 60px;
 }
 
 .footer__menu-item:not(:nth-child(7)) {
@@ -914,7 +921,12 @@ a {
 
 .footer__call {
   display: flex;
+  align-items: center;
   column-gap: 15px;
+}
+
+.footer__call-link {
+  display: none;
 }
 
 .footer__btn {
@@ -981,7 +993,7 @@ a {
     padding: 43px 0 52px 0;
   }
 
-  .header__item-logo {
+  .header__logo {
     margin-bottom: 30px;
   }
 
@@ -1151,6 +1163,7 @@ a {
     background: var(--bg-lenear-gradient-blue360);
     display: block;
     height: 490px;
+    margin: 0 auto 30px;
   }
 
   .request__inner::after {
@@ -1191,7 +1204,11 @@ a {
 
 }
 
-@media (max-width: 915px) {
+@media (max-width: 910px) {
+  .reviews {
+    height: 452px;
+    margin-bottom: 35px;
+  }
   .slick-slider {
     position: relative;
     align-items: center;
@@ -1199,6 +1216,7 @@ a {
 
   .slick-slider .slick-track {
     column-gap: 45px;
+    margin-left: -5px;
   }
 
   .slick-arrow {
@@ -1234,7 +1252,6 @@ a {
     left: 0;
     display: flex;
     justify-content: center;
-    margin-bottom: 35px;
   }
 
   .slick-dots li {
@@ -1252,6 +1269,37 @@ a {
 
   .slick-dots .slick-active button {
     background: var(--color-blue);
+  }
+
+  .footer__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer__privacy {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .footer__info {
+    padding-right: 50px;
+  }
+
+  .footer__navigation {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+
+  .footer__menu-list {
+    text-align: center;
+  }
+
+  .footer__menu-item:not(:nth-child(7)) {
+    padding-bottom: 10px;
   }
 }
 
@@ -1586,9 +1634,22 @@ a {
     width: 400px;
   }
 
+  .footer__info {
+    padding-right: 0;
+  }
+
+  .footer__menu {
+    padding: 0 30px;
+  }
+
 }
 
 @media (max-width: 670px) {
+  .reviews {
+    height: 452px;
+    margin-bottom: 35px;
+  }
+
   .reviews__inner {
     position: relative;
   }
@@ -1609,7 +1670,7 @@ a {
 
   .reviews__link {
     position: absolute;
-    bottom: -95px;
+    bottom: -77px;
   }
 
   .slick-list.draggable {
@@ -1844,6 +1905,11 @@ a {
     height: 290px;
   }
 
+  .slick-slider .slick-track {
+    column-gap: 15px;
+    margin-left: -4px;
+  }
+
   .reviews__inner {
     height: 420px;
   }
@@ -1858,7 +1924,54 @@ a {
   }
 
   .reviews__link {
-    bottom: -45px;
+    bottom: -15px;
+  }
+
+  .footer {
+    height: 729px;
+  }
+
+  .footer__inner {
+    padding: 45px 0 0;
+  }
+
+  .footer__info {
+    padding: 0;
+    margin-bottom: 35px;
+  }
+
+  .footer__logo {
+    margin-bottom: 0;
+  }
+
+  .footer__menu {
+    padding-right: 15px;
+  }
+
+  .footer__call {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer__call-block {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 20px;
+  }
+
+  .footer__call-link {
+    display: block;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--rgba-white6);
+  }
+
+  .footer__icon-whatsup {
+    background-color: var(--black);
+    padding: 7px;
+    border-radius: 100%;
   }
 }
 
@@ -1934,10 +2047,6 @@ a {
     line-height: 38px;
   }
 
-  .slick-slider .slick-track {
-    column-gap: 20px;
-  }
-
   .slick-next.slick-arrow {
     right: 74px;
     bottom: -30px;
@@ -1948,6 +2057,16 @@ a {
     left: 74px;
     bottom: -30px;
     width: 12px;
+  }
+
+  .footer__title {
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  .footer__text {
+    font-size: 11px;
+    line-height: 16px;
   }
 }
 

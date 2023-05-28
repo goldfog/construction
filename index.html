@@ -5,17 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Construction</title>
-    <link rel="stylesheet" href="./style/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./style/style.css"/>
+    <link rel="stylesheet" href="./style/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
-
-
   <body>
     <header class="header">
       <div class="header__top">
         <div class="header__device">
-          <img class="hearts-icon" src="./images/heart.svg" alt="hearts">
-          <img class="basket-icon" src="./images/basket_icon.svg" alt="basket">
+          <a class="hearts-link" href="#">
+            <img class="hearts-icon" src="./images/heart.svg" alt="hearts" />
+          </a>
+          <a class="basket-link" href="#">
+            <img
+            class="basket-icon"
+            src="./images/basket_icon.svg"
+            alt="basket"
+          />
+          </a>
           <span></span>
         </div>
         <div class="menu__burger">
@@ -23,9 +29,9 @@
         </div>
         <div class="header__inner">
           <div class="header__item">
-            <div class="header__item-logo">
-              <a class="header__item-link" href="#">
-                <img src="./images/logo.png" alt="">
+            <div class="header__logo">
+              <a class="header__logo-link" href="#">
+                <img src="./images/logo.png" alt="logo" />
               </a>
               <div class="header__item-descr">
                 <h3 class="header__item-title">Строй недорого</h3>
@@ -44,62 +50,60 @@
               <button class="btn header__info-btn">Заказать звонок</button>
               <div class="header__phone">
                 <img
-                class="header__info-icon"
-                src="./images/whats-up.svg"
-                alt="whatsUp"
-              />
-              <a class="link__whatsup" href="#">Написать нам</a>
+                  class="header__info-icon"
+                  src="./images/whats-up.svg"
+                  alt="whatsUp"
+                />
+                <a class="link__whatsup" href="#">Написать нам</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-        <div class="header__nav">
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__list-item">
-                <a href="" class="menu__list-link">Главная</a>
-              </li>
-              <li class="menu__list-item">
-                <a href="" class="menu__list-link">О компании</a>
-              </li>
-              <li class="menu__list-item">
-                <a href="" class="menu__list-link">Каталог</a>
-              </li>
-              <li class="menu__list-item">
-                <a href="" class="menu__list-link">Доставка и оплата</a>
-              </li>
-              <li class="menu__list-item">
-                <a href="" class="menu__list-link">Акции</a>
-              </li>
-              <li class="menu__list-item">
-                <a href="" class="menu__list-link">Отзывы</a>
-              </li>
-              <li class="menu__list-item">
-                <a href="" class="menu__list-link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <button class="menu__btn">Заказать звонок</button>
-          <a class="menu__link" href="#">
-            <img src="./images/green-whatsup.svg" alt="">
-            Напишите нам
-          </a>
-          <div class="time">
-            <p>Краснодар, ул. Гагарина</p>
+      <div class="header__nav">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a href="" class="menu__list-link">Главная</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="" class="menu__list-link">О компании</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="" class="menu__list-link">Каталог</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="" class="menu__list-link">Доставка и оплата</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="" class="menu__list-link">Акции</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="" class="menu__list-link">Отзывы</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="" class="menu__list-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="menu__btn">Заказать звонок</button>
+        <a class="menu__link" href="#">
+          <img src="./images/green-whatsup.svg" alt="" />
+          Напишите нам
+        </a>
+        <div class="time">
+          <p>Краснодар, ул. Гагарина</p>
           <p>с 9:00-19:00</p>
-          </div>
-          
-        </div>   
+        </div>
+      </div>
     </header>
 
-      <main>
-
-       <section class="production">
+    <main>
+      <section class="production">
         <div class="container">
           <div class="production__inner">
             <div class="production__search">
-              <input id="search" type="text" placeholder="Поиск">
+              <input id="search" type="text" placeholder="Поиск" />
               <button class="production__btn">Найти</button>
             </div>
             <div class="swiper">
@@ -109,70 +113,107 @@
                   <div class="production__blocks">
                     <div class="blocks__descr">
                       <div class="blocks__info">
-                        <img class="blocks__img" src="./images/production/blocks/blocks.png" alt="">
-                          <img class="blocks__slide" src="./images/production/slide1.png" alt="">
-                      <p class="blocks__subtitle">
-                        <span>Весна!</span> Открытие строительного сезона!
-                      </p>
-                      <h4 class="blocks__title">
-                        Газобетонные блоки
-                      </h4>
-                      <p class="blocks__text">
-                        Производится на современных заводах организовано по немецкой технологии (Wehrhahn GmbH и Masa-Henke Maschinenfabrik GmbH) из отборного минерального сырья
-                      </p>
+                        <img
+                          class="blocks__img"
+                          src="./images/production/blocks/blocks.png"
+                          alt=""
+                        />
+                        <img
+                          class="blocks__slide"
+                          src="./images/production/slide1.png"
+                          alt=""
+                        />
+                        <p class="blocks__subtitle">
+                          <span>Весна!</span> Открытие строительного сезона!
+                        </p>
+                        <h4 class="blocks__title">Газобетонные блоки</h4>
+                        <p class="blocks__text">
+                          Производится на современных заводах организовано по
+                          немецкой технологии (Wehrhahn GmbH и Masa-Henke
+                          Maschinenfabrik GmbH) из отборного минерального сырья
+                        </p>
                       </div>
                       <div class="blocks__form">
                         <button class="btn blocks__btn">Подробнее</button>
                         <div class="blocks__check">
                           <div class="blocks__str">
-                            <img class="blocks-img" src="./images/production/icons/checkbox.svg" alt="checkbox">
+                            <img
+                              class="blocks-img"
+                              src="./images/production/icons/checkbox.svg"
+                              alt="checkbox"
+                            />
                             В наличии
                           </div>
                           <div class="blocks__str">
-                            <img class="blocks-img" src="./images/production/icons/checkbox.svg" alt="checkbox">
+                            <img
+                              class="blocks-img"
+                              src="./images/production/icons/checkbox.svg"
+                              alt="checkbox"
+                            />
                             С доставкой
                           </div>
                         </div>
                       </div>
                     </div>
-                    
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="production__mixer">
-                    <img class="mixer__images1" src="./images/production/mixers/mix-1.png" alt="">
-                    <img class="mixer__images2" src="./images/production/mixers/mix-2.png" alt="">
-                    <img class="mixer__images3" src="./images/production/mixers/mix-3.png" alt="">
-                    <img class="mixer__slide" src="./images/production/slide2.png" alt=""slide2>
+                    <img
+                      class="mixer__images1"
+                      src="./images/production/mixers/mix-1.png"
+                      alt=""
+                    />
+                    <img
+                      class="mixer__images2"
+                      src="./images/production/mixers/mix-2.png"
+                      alt=""
+                    />
+                    <img
+                      class="mixer__images3"
+                      src="./images/production/mixers/mix-3.png"
+                      alt=""
+                    />
+                    <img
+                      class="mixer__slide"
+                      src="./images/production/slide2.png"
+                      alt=""
+                      slide2
+                    />
                     <div class="mixer__info">
-                      <h4 class="mixer__title">
-                        Сухие строительные смеси
-                      </h4>
+                      <h4 class="mixer__title">Сухие строительные смеси</h4>
                       <span class="mixer__subtitle">
                         От ведущи российских производителей
                       </span>
                       <div class="mixer__form">
                         <div class="mixer__check">
                           <div class="mixer__str">
-                            <img class="mixer-img" src="./images/production/icons/checkbox.svg" alt="checkbox">
+                            <img
+                              class="mixer-img"
+                              src="./images/production/icons/checkbox.svg"
+                              alt="checkbox"
+                            />
                             Оптом и в розницу
                           </div>
                           <div class="mixer__str">
-                            <img class="mixer-img" src="./images/production/icons/checkbox.svg" alt="checkbox">
+                            <img
+                              class="mixer-img"
+                              src="./images/production/icons/checkbox.svg"
+                              alt="checkbox"
+                            />
                             С доставкой
                           </div>
                         </div>
                         <button class="btn mixer__btn">Подробнее</button>
                       </div>
                     </div>
-                    
                   </div>
                 </div>
               </div>
-            </div> 
+            </div>
           </div>
         </div>
-      </section> 
+      </section>
 
       <section class="offer">
         <div class="container">
@@ -180,61 +221,101 @@
             <h5 class="offer__title">Мы предлагаем</h5>
             <div class="offer__boxs">
               <div class="offer__box">
-                <img class="box__images" src="./images/offer/picture-1.jpg" alt="picture">
+                <img
+                  class="box__images"
+                  src="./images/offer/picture-1.jpg"
+                  alt="picture"
+                />
                 <div class="box__name">
                   <a class="box__link" href="#">Гипсокартон</a>
                 </div>
               </div>
               <div class="offer__box">
-                <img class="box__images" src="./images/offer/picture-2.jpg" alt="picture">
+                <img
+                  class="box__images"
+                  src="./images/offer/picture-2.jpg"
+                  alt="picture"
+                />
                 <div class="box__name">
                   <a class="box__link" href="#">Гипсоволокно</a>
                 </div>
               </div>
               <div class="offer__box">
-                <img class="box__images" src="./images/offer/picture-3.jpg" alt="picture">
+                <img
+                  class="box__images"
+                  src="./images/offer/picture-3.jpg"
+                  alt="picture"
+                />
                 <div class="box__name">
                   <a class="box__link" href="#">Сухие строительные смеси</a>
                 </div>
               </div>
               <div class="offer__box">
-                <img class="box__images" src="./images/offer/picture-4.jpg" alt="picture">
+                <img
+                  class="box__images"
+                  src="./images/offer/picture-4.jpg"
+                  alt="picture"
+                />
                 <div class="box__name">
                   <a class="box__link" href="#">Газобетон</a>
                 </div>
               </div>
               <div class="offer__box">
-                <img class="box__images" src="./images/offer/picture-5.jpg" alt="picture">
+                <img
+                  class="box__images"
+                  src="./images/offer/picture-5.jpg"
+                  alt="picture"
+                />
                 <div class="box__name">
                   <a class="box__link" href="#">Ручной инструмент</a>
                 </div>
               </div>
               <div class="offer__box">
-                <img class="box__images" src="./images/offer/picture-6.jpg" alt="picture">
+                <img
+                  class="box__images"
+                  src="./images/offer/picture-6.jpg"
+                  alt="picture"
+                />
                 <div class="box__name">
                   <a class="box__link" href="">Электроинструмент</a>
                 </div>
               </div>
               <div class="offer__box">
-                <img class="box__images" src="./images/offer/picture-7.jpg" alt="picture">
+                <img
+                  class="box__images"
+                  src="./images/offer/picture-7.jpg"
+                  alt="picture"
+                />
                 <div class="box__name">
                   <a class="box__link" href="#">Строительные материалы</a>
                 </div>
               </div>
               <div class="offer__box">
-                <img class="box__images" src="./images/offer/picture-8.jpg" alt="picture">
+                <img
+                  class="box__images"
+                  src="./images/offer/picture-8.jpg"
+                  alt="picture"
+                />
                 <div class="box__name">
                   <a class="box__link" href="#">Крепеж</a>
                 </div>
               </div>
               <div class="offer__box">
-                <img class="box__images" src="./images/offer/picture-9.jpg" alt="picture">
+                <img
+                  class="box__images"
+                  src="./images/offer/picture-9.jpg"
+                  alt="picture"
+                />
                 <div class="box__name">
                   <a class="box__link" href="#">Изделия из древесины</a>
                 </div>
               </div>
               <div class="offer__box">
-                <img class="box__images" src="./images/offer/picture-10.jpg" alt="picture">
+                <img
+                  class="box__images"
+                  src="./images/offer/picture-10.jpg"
+                  alt="picture"
+                />
                 <div class="box__name">
                   <a class="box__link" href="#">Гидроизоляционные материалы</a>
                 </div>
@@ -251,24 +332,34 @@
             <div class="company__info">
               <div class="company__descr">
                 <h5 class="descr__title">О Компании</h5>
-                <h2 class="title descr__subtitle">Мы специализируемся на продаже строительного материала</h2>
+                <h2 class="title descr__subtitle">
+                  Мы специализируемся на продаже строительного материала
+                </h2>
                 <p class="descr__text">
-                  Предлагаем широкий ассортимент строительных материалов: электроинструмент, товары для малярных и плиточных работ, товары для дома и сада, крепеж, гидроизоляцию и многое другое.
-                </p> 
+                  Предлагаем широкий ассортимент строительных материалов:
+                  электроинструмент, товары для малярных и плиточных работ,
+                  товары для дома и сада, крепеж, гидроизоляцию и многое другое.
+                </p>
               </div>
-                <div class="company__partnership">
-                  <p class="partnership__text">
-                    Компания СтройНедорого является официальным дилером Байкальского Газобетона.  Являемся партнерами Gerkules, Unis, Knauf, Ветонит, Скала.
-                  </p>
-                  <div class="company__logo">
-                    <img src="./images/company/company-1.svg" alt="gerkules">
-                    <img src="./images/company/company-2.svg" alt="unis">
-                    <img src="./images/company/company-3.svg" alt="knauf">
-                    <img src="./images/company/company-4.svg" alt="Газобетон">
-                  </div>
+              <div class="company__partnership">
+                <p class="partnership__text">
+                  Компания СтройНедорого является официальным дилером
+                  Байкальского Газобетона. Являемся партнерами Gerkules, Unis,
+                  Knauf, Ветонит, Скала.
+                </p>
+                <div class="company__logo">
+                  <img src="./images/company/company-1.svg" alt="gerkules" />
+                  <img src="./images/company/company-2.svg" alt="unis" />
+                  <img src="./images/company/company-3.svg" alt="knauf" />
+                  <img src="./images/company/company-4.svg" alt="Газобетон" />
                 </div>
+              </div>
             </div>
-            <img class="company__images" src="./images/company/company-bg.jpg" alt="company-bg">
+            <img
+              class="company__images"
+              src="./images/company/company-bg.jpg"
+              alt="company-bg"
+            />
           </div>
         </div>
       </section>
@@ -276,10 +367,16 @@
       <section class="characteristic">
         <div class="container">
           <div class="characteristic__inner">
-            <h2 class="title characteristic__title">Почему покупать у нас выгодно?</h2>
+            <h2 class="title characteristic__title">
+              Почему покупать у нас выгодно?
+            </h2>
             <div class="characteristic__item">
               <div class="characteristic__info">
-                <img class="characteristic__img" src="./images/characteristic/icons/Icon1.svg" alt="">
+                <img
+                  class="characteristic__img"
+                  src="./images/characteristic/icons/Icon1.svg"
+                  alt=""
+                />
                 <div class="characteristic__descr">
                   <h6 class="characteristic__descr-title">Низкие цены</h6>
                   <p class="characteristic__text">
@@ -288,16 +385,26 @@
                 </div>
               </div>
               <div class="characteristic__info">
-                <img class="characteristic__img" src="./images/characteristic/icons/Icon2.svg" alt="">
+                <img
+                  class="characteristic__img"
+                  src="./images/characteristic/icons/Icon2.svg"
+                  alt=""
+                />
                 <div class="characteristic__descr">
-                  <h6 class="characteristic__descr-title">Широкий ассортимент</h6>
+                  <h6 class="characteristic__descr-title">
+                    Широкий ассортимент
+                  </h6>
                   <p class="characteristic__text">
                     Более 3000 наименований продукции на складе
                   </p>
                 </div>
               </div>
               <div class="characteristic__info">
-                <img class="characteristic__img" src="./images/characteristic/icons/Icon3.svg" alt="">
+                <img
+                  class="characteristic__img"
+                  src="./images/characteristic/icons/Icon3.svg"
+                  alt=""
+                />
                 <div class="characteristic__descr">
                   <h6 class="characteristic__descr-title">Опытный персонал</h6>
                   <p class="characteristic__text">
@@ -306,9 +413,15 @@
                 </div>
               </div>
               <div class="characteristic__info">
-                <img class="characteristic__img" src="./images/characteristic/icons/Icon4.svg" alt="">
+                <img
+                  class="characteristic__img"
+                  src="./images/characteristic/icons/Icon4.svg"
+                  alt=""
+                />
                 <div class="characteristic__descr">
-                  <h6 class="characteristic__descr-title">Оперативная доставка</h6>
+                  <h6 class="characteristic__descr-title">
+                    Оперативная доставка
+                  </h6>
                   <p class="characteristic__text">
                     Осуществляем доставку собственным транспортом
                   </p>
@@ -319,16 +432,17 @@
         </div>
       </section>
 
-       <section class="request">
+      <section class="request">
         <div class="container">
           <div class="request__inner">
             <div class="request__item">
               <div class="request__info">
                 <h4 class="request__title">Не нашли что искали?</h4>
                 <p class="request__text">
-                  Оставьте заявку, и наши менеджеры профессионально проконсультируют и помогут с выбором материалов под ваш бюджет
+                  Оставьте заявку, и наши менеджеры профессионально
+                  проконсультируют и помогут с выбором материалов под ваш бюджет
                 </p>
-                <button class=" btn request__btn">Заказать звонок</button>
+                <button class="btn request__btn">Заказать звонок</button>
               </div>
             </div>
           </div>
@@ -340,17 +454,17 @@
           <div class="reviews__inner">
             <div class="reviews__more">
               <h2 class="title reviews__title">Отзывы о нашей работе</h2>
-            <a class="reviews__link" href="">Все отзывы
-              <img src="./images/reviews/arrow-right.svg" alt="arrow-right">
-            </a>
+              <a class="reviews__link" href=""
+                >Все отзывы
+                <img src="./images/reviews/arrow-right.svg" alt="arrow-right" />
+              </a>
             </div>
             <div class="reviews__items">
               <div class="reviews__item">
-                <span class="reviews__name">
-                  Валерий <span>★★★★★</span>
-                </span>
+                <span class="reviews__name"> Валерий <span>★★★★★</span> </span>
                 <p class="reviews__text">
-                  Хороший строительный магазин. Привезли все в срок, качество на высшем уровне. Спасибо большое! Рекомендую
+                  Хороший строительный магазин. Привезли все в срок, качество на
+                  высшем уровне. Спасибо большое! Рекомендую
                 </p>
               </div>
               <div class="reviews__item">
@@ -358,7 +472,8 @@
                   Анатолий М., <span>★★★★★</span>
                 </span>
                 <p class="reviews__text">
-                  Заказывал газоблок - Стройкомплекс. Сделал заказ и вечером уже привезли, спасибо большое всем доволен! Очень рекомендую
+                  Заказывал газоблок - Стройкомплекс. Сделал заказ и вечером уже
+                  привезли, спасибо большое всем доволен! Очень рекомендую
                 </p>
               </div>
               <div class="reviews__item">
@@ -366,22 +481,23 @@
                   Жданов С.А., <span>★★★★★</span>
                 </span>
                 <p class="reviews__text">
-                  Недавно узнал про этот магазин. Сходил, и он оставил у меня очень хорошие впечатления. Сделали даже подъем на этаж. Персонал работает быстро, много ассортимента
+                  Недавно узнал про этот магазин. Сходил, и он оставил у меня
+                  очень хорошие впечатления. Сделали даже подъем на этаж.
+                  Персонал работает быстро, много ассортимента
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </section> 
+      </section>
 
-
-     <!--  <footer class="footer">
+      <footer class="footer">
         <div class="container">
           <div class="footer__inner">
             <div class="footer__info">
               <div class="footer__logo">
                 <a href="#">
-                  <img src="./images/logo.png" alt="">
+                  <img src="./images/logo.png" alt="" />
                 </a>
                 <div class="footer__descr">
                   <h3 class="footer__title">Строй недорого</h3>
@@ -390,7 +506,9 @@
               </div>
               <div class="footer__privacy">
                 <span class="privacy__text">Политика конфиденциальности</span>
-                <span class="privacy__copyright">© «СТРОЙ НЕДОРОГО» на BLIZKO c 2023 г.</span>
+                <span class="privacy__copyright"
+                  >© «СТРОЙ НЕДОРОГО» на BLIZKO c 2023 г.</span
+                >
               </div>
             </div>
             <div class="footer__navigation">
@@ -421,32 +539,56 @@
               </nav>
               <div class="footer__contacts">
                 <div class="footer__adress">
-                  <img class="footer__icon-map" src="./images/footer/map.svg" alt="">
+                  <!-- <img
+                    class="footer__icon-map"
+                    src="./images/footer/map.svg"
+                    alt=""
+                  /> -->
+                  <svg width="28" height="28" viewBox="12 0 12 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.1556 7.02572V7.02572C23.5555 10.4256 23.5555 15.938 20.1556 19.3379L15.4502 24.0433C14.649 24.8445 13.35 24.8445 12.5488 24.0433L7.84342 19.3379C4.44351 15.938 4.44351 10.4256 7.84342 7.02572V7.02572C11.2433 3.6258 16.7557 3.6258 20.1556 7.02572Z" stroke="#6F6B71" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.1556 7.02572V7.02572C23.5555 10.4256 23.5555 15.938 20.1556 19.3379L15.4502 24.0433C14.649 24.8445 13.35 24.8445 12.5488 24.0433L7.84342 19.3379C4.44351 15.938 4.44351 10.4256 7.84342 7.02572V7.02572C11.2433 3.6258 16.7557 3.6258 20.1556 7.02572Z" stroke="#6F6B71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <ellipse cx="13.9999" cy="13.182" rx="2.98716" ry="2.98716" stroke="#6F6B71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
                   <span>Новосибирск, ул. Красина, 74</span>
                 </div>
                 <div class="footer__phone">
-                  <img class="footer__icon-phone" src="./images/footer/phone.svg" alt="">
-                  <a class="footer__phone-link" href="tel:79231119901">+7 (923) 111-99-01</a>
+                  <img
+                    class="footer__icon-phone"
+                    src="./images/footer/phone.svg"
+                    alt=""
+                  />
+                  <a class="footer__phone-link" href="tel:79231119901"
+                    >+7 (923) 111-99-01</a
+                  >
                 </div>
                 <div class="footer__email">
-                  <img class="footer__icon-email" src="./images/footer/clock.svg" alt="">
-                  <a class="footer__email-link" href="email:roman_golushchenko@mail.ru">roman_golushchenko@mail.ru</a>
+                  <img
+                    class="footer__icon-email"
+                    src="./images/footer/clock.svg"
+                    alt=""
+                  />
+                  <a
+                    class="footer__email-link"
+                    href="email:roman_golushchenko@mail.ru"
+                    >roman_golushchenko@mail.ru</a
+                  >
                 </div>
                 <div class="footer__call">
                   <button class="btn footer__btn">Заказать звонок</button>
-                  <img class="footer__icon-whatsup" src="./images/whats-up.svg" alt="footer-whatsup">
-                  <svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M16.1558 4.02578V4.02578C19.5558 7.4257 19.5558 12.938 16.1558 16.338L11.4504 21.0434C10.6492 21.8446 9.35026 21.8446 8.54907 21.0434L3.84367 16.338C0.443751 12.938 0.443751 7.4257 3.84367 4.02578V4.02578C7.24358 0.625866 12.7559 0.625866 16.1558 4.02578Z" stroke="#6F6B71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-<ellipse cx="10.0001" cy="10.1821" rx="2.98716" ry="2.98716" stroke="#6F6B71" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
+                  <div class="footer__call-block">
+                    <img class="footer__icon-whatsup" src="./images/footer/whatsup.svg" alt="footer-whatsup">
+                    <a class="footer__call-link" href="#">
+                      Написать нам
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </footer>
-    </main> -->
+    </main>
 
     <script src="./js/jquery.js"></script>
     <script src="./js/slick.min.js"></script>
