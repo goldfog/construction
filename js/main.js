@@ -1,3 +1,23 @@
+const swiper = new Swiper('.swiper', {
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  autoplay: {
+    delay: 5000,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+
 const burger = document.querySelector(".menu__burger");
 const menu = document.querySelector(".header__nav");
 
@@ -21,7 +41,8 @@ $('.reviews__items').slick({
           dots: true,
           PrevArrows: "",
           NextArrows: "",
-          dots: true
+          dots: true,
+          adaptiveHeight: true,
         }
       },
       {
@@ -34,6 +55,14 @@ $('.reviews__items').slick({
       },
       {
         breakpoint: 670,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 570,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
