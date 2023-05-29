@@ -2,7 +2,7 @@
 .header__burger,
 .menu__link,
 .menu__btn,
-.time {
+.header__duration {
   display: none;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .header__top::before {
-  content: url(../images/header-img.png);
+  content: url(../images/header/header-img.png);
   position: absolute;
   top: -1px;
   right: 0;
@@ -23,7 +23,7 @@
 
 .header__inner {
   position: relative;
-  background-image: url("../images/header-bg.jpg");
+  background-image: url("../images/header/header-bg.jpg");
   padding: 43px 0 52px 360px;
 }
 

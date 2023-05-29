@@ -540,7 +540,7 @@
     margin-bottom: 32px;
   }
 
-  .time {
+  .header__duration {
     font-family: var(--font-inter);
     font-weight: 500;
     font-size: 16px;
@@ -778,12 +778,11 @@
 
   .header__inner {
     padding: 26px 0 197px;
-    height: 512px;
     overflow: hidden;
   }
 
   .header__inner::after {
-    content: url(../images/header-device-img.png);
+    content: url(../images/header/header-device-img.png);
     position: absolute;
     bottom: -5px;
   }

@@ -76,7 +76,8 @@
   color: var(--white);
 }
 
-.footer__adress {
+.footer__adress,
+.footer__phone {
   font-family: var(--font-inter);
   font-size: 16px;
   line-height: 22px;
@@ -84,19 +85,15 @@
   margin-bottom: 12px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-.footer__icon-map {
-  margin-right: 6px;
-}
-
-.footer__phone {
-  margin-bottom: 12px;
-}
-
+.footer__icon-marker,
 .footer__icon-phone {
-  margin-right: 6px;
+  margin-right: 10px;
+}
+
+.footer__icon-email {
+  margin-right: 5px;
 }
 
 .footer__email {
@@ -105,10 +102,6 @@
   line-height: 22px;
   color: var(--white);
   margin-bottom: 24px;
-}
-
-.footer__icon-email {
-  margin-right: 6px;
 }
 
 .footer__call {
