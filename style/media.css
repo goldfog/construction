@@ -979,11 +979,12 @@
 
   .slick-list.draggable {
     height: 290px;
+    margin-left: -2px;
   }
 
   .slick-slider .slick-track {
     column-gap: 15px;
-    margin-left: -4px;
+    margin-left: -2px;
   }
 
   .reviews__inner {
@@ -1000,7 +1001,7 @@
   }
 
   .reviews__link {
-    bottom: -15px;
+    bottom: -35px;
   }
 
   .footer {
@@ -1127,6 +1128,10 @@
     padding: 0 10px;
   }
 
+  .reviews {
+    height: 476px;
+  }
+
   .reviews__title {
     text-align: center;
     font-size: 26px;
@@ -1143,6 +1148,10 @@
     left: 74px;
     bottom: -30px;
     width: 12px;
+  }
+
+  .reviews__link {
+    bottom: -60px;
   }
 
   .footer__title {
