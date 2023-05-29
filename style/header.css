@@ -2,7 +2,8 @@
 .header__burger,
 .menu__link,
 .menu__btn,
-.header__duration {
+.header__duration,
+.link__whatsup {
   display: none;
 }
 
@@ -64,7 +65,6 @@
   font-size: 15px;
   line-height: 22px;
   text-transform: uppercase;
-  color: var(--white);
   color: var(--rgba-white8);
 }
 
@@ -131,6 +131,3 @@
   color: var(--rgba-white6);
 }
 
-.link__whatsup {
-  display: none;
-}

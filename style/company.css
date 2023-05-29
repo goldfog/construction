@@ -7,7 +7,6 @@
 
 .descr__title {
   font-family: var(--font-inter);
-  font-weight: 400;
   font-size: 24px;
   line-height: 35px;
   color: var(--color-black);
@@ -16,7 +15,6 @@
 
 .descr__subtitle {
   font-family: var(--font-oswald);
-  font-weight: 400;
   font-size: 29px;
   line-height: 42px;
   text-transform: uppercase;
@@ -32,7 +30,6 @@
 
 .partnership__text {
   font-family: var(--font-inter);
-  font-weight: 400;
   font-size: 16px;
   line-height: 23px;
   color: var(--color-black);

@@ -43,16 +43,11 @@
   row-gap: 5px;
 }
 
-.privacy__text {
-  font-family: var(--font-roboto);
-  font-size: 13px;
-  line-height: 15px;
-  color: var(--rgba-gray);
-}
-
+.privacy__text,
 .privacy__copyright {
   font-family: var(--font-roboto);
   font-size: 13px;
+  line-height: 15px;
   color: var(--rgba-gray);
 }
 
