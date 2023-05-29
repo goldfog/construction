@@ -1,0 +1,240 @@
+.production {
+  margin-bottom: 26px;
+}
+
+.production__inner {
+  width: 1125px;
+  margin: 0 auto;
+}
+
+.production__search {
+  position: relative;
+  margin: 23px auto 38px;
+  border: 1px solid var(--color-border);
+}
+
+.production__search input {
+  width: 968px;
+  height: 40px;
+  border: none;
+  padding: 0 40px;
+}
+
+.production__search input::placeholder  {
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.production__search::after{
+  content: url(../images/production/icons/search.svg);
+  position: absolute;
+  left: 16px;
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  z-index: 1;
+}
+
+.production__btn {
+  font-family: var(--font-inter);
+  background: var(--bg-light-gray);
+  border: none;
+  width: 157px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--black);
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.swiper-slide .production__blocks {
+  position: relative;
+  background: var(--bg-gradient-blue);
+  width: 1125px;
+  height: 320px;
+  z-index: 5;
+  margin: 0 auto;
+}
+
+.swiper-slide  .production__blocks::after {
+  content: url("../images/production/bg-blocks.svg");
+  position: absolute;
+  bottom: -89px;
+  right: 420px;
+  z-index: 0;
+}
+
+.blocks__descr {
+  padding: 27px 0 33px 56px;
+}
+
+.blocks__img {
+  position: absolute;
+  right: 179px;
+  bottom: -40px;
+}
+
+.blocks__slide {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+.blocks__subtitle {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--color-green);
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+.blocks__title {
+  font-family: var(--font-oswald);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 39px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.blocks__text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 145%;
+  color: var(--rgba-white8);
+  margin-bottom: 20px;
+  width: 478px;
+}
+
+.blocks__form {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 70px;
+}
+
+.blocks__check {
+  font-family: var(--font-oswald);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+
+.blocks__str {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.blocks__str:nth-last-child(2) {
+  margin-bottom: 13px;
+}
+
+/* Mixer */
+
+.production__mixer {
+  position: relative;
+  background-image: url(../images/production/production-blue-bg.jpg);
+  height: 320px;
+  width: 1125px;
+  padding: 27px 0 50px 56px;
+  z-index: 5;
+  margin: 0 auto;
+}
+
+.production__mixer::after {
+  content: url(../images/production/bg-blocks.svg);
+  position: absolute;
+  right: 437px;
+  bottom: -88px;
+}
+
+.mixer__images1 {
+  position: absolute;
+  right: 366px;
+  bottom: -22px;
+  z-index: 1;
+}
+
+.mixer__images2 {
+  position: absolute;
+  right: 247px;
+  bottom: -6px;
+  z-index: 1;
+}
+
+.mixer__images3 {
+  position: absolute;
+  right: 22px;
+  bottom: -22px;
+  z-index: 0;
+}
+
+.mixer__slide {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+.mixer__title {
+  font-family: var(--font-oswald);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 39px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+.mixer__subtitle {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--rgba-white8);
+}
+.mixer__form {
+  margin: 40px 0 0;
+}
+
+.mixer__check {
+  display: flex;
+  column-gap: 57px;
+  font-family: var(--font-oswald);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 25px;
+}
+
+.mixer__str {
+  display: flex;
+  column-gap: 10px;
+}
+
+.slick-slider {
+  width: 1125px;
+  margin: 0 auto;
+}

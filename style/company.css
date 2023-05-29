@@ -1,0 +1,50 @@
+.company__inner {
+  display: flex;
+  column-gap: 42px;
+  width: 1125px;
+  margin: 0 auto 35px;
+}
+
+.descr__title {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: var(--color-black);
+  margin-bottom: 22px;
+}
+
+.descr__subtitle {
+  font-family: var(--font-oswald);
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: var(--color-black);
+  margin-bottom: 25px;
+}
+
+.descr__text {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 14px;
+}
+
+.partnership__text {
+  font-family: var(--font-inter);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--color-black);
+  margin-bottom: 48px;
+}
+
+.company__logo {
+  display: flex;
+  align-items: center;
+  column-gap: 34px;
+}
+
+.company__images {
+  padding-top: 7px;
+}

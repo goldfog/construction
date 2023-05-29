@@ -1,0 +1,48 @@
+.characteristic__inner {
+  height: 213px;
+  width: 1125px;
+  margin: 0 auto 30px;
+}
+
+.characteristic__title {
+  margin-bottom: 40px;
+}
+
+.characteristic__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.characteristic__info {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  column-gap: 8px;
+}
+
+.characteristic__info::after {
+  content: url("../images/characteristic/sign-logo.svg");
+  position: absolute;
+  top: -15px;
+  left: 0;
+}
+
+.characteristic__descr {
+  width: 195px;
+}
+
+.characteristic__descr-title {
+  font-family: var(--font-oswald);
+  font-size: 19px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: var(--color-blue);
+  margin-bottom: 20px;
+}
+
+.characteristic__text {
+  font-family: var(--font-inter);
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--rgba-dark-black);
+}

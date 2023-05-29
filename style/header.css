@@ -1,0 +1,136 @@
+.header__device,
+.header__burger,
+.menu__link,
+.menu__btn,
+.time {
+  display: none;
+}
+
+.header__top {
+  position: relative;
+  background: var(--bg-color-black);
+
+}
+
+.header__top::before {
+  content: url(../images/header-img.png);
+  position: absolute;
+  top: -1px;
+  right: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.header__inner {
+  position: relative;
+  background-image: url("../images/header-bg.jpg");
+  padding: 43px 0 52px 360px;
+}
+
+.header__item {
+  position: relative;
+  display: flex;
+  align-items: end;
+  column-gap: 115px;
+  z-index: 10;
+}
+
+.header__logo {
+  display: flex;
+  align-items: end;
+  position: relative;
+  mix-blend-mode: lighten;
+}
+
+.logo {
+  width: 77px;
+  height: 90px;
+}
+
+.header__item-descr {
+  margin-left: 20px;
+}
+
+.header__item-title {
+  font-weight: 400;
+  font-size: 41px;
+  line-height: 59px;
+  text-transform: uppercase;
+  color: var(--white);
+
+}
+.header__item-text {
+  font-family: var(--font-inter);
+  font-size: 15px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--white);
+  color: var(--rgba-white8);
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+.header__info-tel {
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: var(--white);
+  text-align: right;
+}
+
+.header__info-adress {
+  font-family: var(--font-inter);
+  font-size: 15px;
+  line-height: 22px;
+  text-align: right;
+  text-transform: uppercase;
+  color: var(--rgba-white6);
+}
+
+.header__info-icon {
+  background-color: var(--black);
+  padding: 7px;
+  border-radius: 100%;
+  margin-left: 16px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color-blue);
+  height: 48px;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.menu__list-link {
+  font-family: var(--font-opensans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--white);
+}
+
+.menu__list-link:hover {
+  color: var(--rgba-white6);
+}
+
+.link__whatsup {
+  display: none;
+}
